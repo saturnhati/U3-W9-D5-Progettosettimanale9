@@ -27,6 +27,7 @@ class Iphone extends Smartphone {
         let costo_chiamata = minuti * 0.2;
         this.saldo = this.saldo - costo_chiamata;
         console.log(`Hai effettuato una chiamata di ${minuti} minuti, hai speso ${costo_chiamata}€`);
+        return costo_chiamata;
     }
     ricarica(importo) {
         this.saldo += importo;
@@ -174,7 +175,7 @@ function displayContent() {
     callBtn.innerHTML = '<i class="fa-solid fa-phone"></i>';
     let onCall = false;
     callBtn.addEventListener("click", () => {
-        var _a;
+        var _a, _b;
         if (!onCall) {
             startTimer(divConsole);
             onCall = true;
@@ -187,6 +188,7 @@ function displayContent() {
             clearInterval(interval);
             console.log(minuti);
             (_a = user1.smartphone) === null || _a === void 0 ? void 0 : _a.chiamata(minuti);
+            divConsole.innerHTML = `Chiamata terminata. Costo totale: ${(_b = user1.smartphone) === null || _b === void 0 ? void 0 : _b.chiamata(minuti)}€`;
         }
     });
     iphoneScreen.appendChild(callBtn);

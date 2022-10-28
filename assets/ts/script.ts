@@ -37,12 +37,13 @@ abstract class Smartphone implements ISmartphone {
 }
 
 class Iphone extends Smartphone {
-  chiamata(minuti: number): any {
+  chiamata(minuti: number): number {
     // scalo il credito in base alla chiamata e aumento il numero chiamate
     this.numero_chiamate++;
     let costo_chiamata = minuti * 0.2;
     this.saldo = this.saldo - costo_chiamata;
     console.log(`Hai effettuato una chiamata di ${minuti} minuti, hai speso ${costo_chiamata}€`);
+    return costo_chiamata;
   }
   ricarica(importo: number): any {
     this.saldo += importo;
@@ -204,6 +205,7 @@ function displayContent() {
       clearInterval(interval);
       console.log(minuti);
       user1.smartphone?.chiamata(minuti);
+      divConsole.innerHTML = `Chiamata terminata. Costo totale: ${user1.smartphone?.chiamata(minuti)}€`;
     }
   });
   iphoneScreen.appendChild(callBtn);
