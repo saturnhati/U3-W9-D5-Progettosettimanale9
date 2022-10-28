@@ -225,3 +225,5 @@ function startTimer(elem) {
         s++;
     }, 1000);
 }
+// TODO: sistemare funzionamento del timer delle chiamate che mo pare drogato
+// TODO: altri due smartphone - (forse un ciclo? array di user 1 - 2 - 3 ecc ????)
