@@ -17,45 +17,6 @@ button {
 .container .phone {
   height: 550px;
   width: 350px;
-}
-.container .phone .infos {
-  text-align: center;
-}
-.container .phone .infos button {
-  margin-left: 2px;
-  margin-right: 2px;
-  width: 46px;
-  height: 46px;
-  color: white;
-  font-size: 1.1rem;
-}
-.container .phone h2 {
-  margin: 2px;
-}
-.container .phone h3 {
-  font-size: 0.6rem;
-}
-.container .phone button {
-  height: 60px;
-  width: 60px;
-  border: none;
-  border-radius: 50%;
-  background-color: black;
-}
-.container .phone button i {
-  color: white;
-  font-size: 2rem;
-}
-.container .phone .btn-big {
-  border-radius: 8px;
-  display: block;
-  width: 100% !important;
-  height: 20px !important;
-  margin-top: 4px;
-  font-size: 0.7rem !important;
-}
-.container .iphone {
-  background-image: url(../img/iphone.png);
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 100px;
@@ -63,7 +24,7 @@ button {
   padding-right: 78px;
   padding-left: 72px;
 }
-.container .iphone .iphone-screen {
+.container .phone .phone-screen {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -71,46 +32,42 @@ button {
   width: 100%;
   height: 100%;
 }
-.container .iphone .iphone-screen .iphone-console {
+.container .phone .phone-screen .phone-console {
   font-size: 0.8rem;
 }
-.container .galaxy {
-  background-image: url(../img/galaxy.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-top: 80px;
-  padding-bottom: 84px;
-  padding-right: 64px;
-  padding-left: 72px;
+.container .phone .phone-screen .infos {
+  text-align: center;
 }
-.container .galaxy .galaxy-screen {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+.container .phone .phone-screen .infos button {
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 46px;
+  height: 46px;
+  color: white;
+  font-size: 1.1rem;
 }
-.container .galaxy .galaxy-screen .galaxy-console {
-  font-size: 0.8rem;
+.container .phone .phone-screen h2 {
+  margin: 2px;
 }
-.container .huawei {
-  background-image: url(../img/huawei.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-top: 80px;
-  padding-bottom: 54px;
-  padding-right: 90px;
-  padding-left: 72px;
+.container .phone .phone-screen h3 {
+  font-size: 0.6rem;
 }
-.container .huawei .huawei-screen {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+.container .phone .phone-screen button {
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: black;
 }
-.container .huawei .huawei-screen .huawei-console {
-  font-size: 0.8rem;
+.container .phone .phone-screen button i {
+  color: white;
+  font-size: 2rem;
+}
+.container .phone .phone-screen .btn-big {
+  border-radius: 8px;
+  display: block;
+  width: 100% !important;
+  height: 20px !important;
+  margin-top: 4px;
+  font-size: 0.7rem !important;
 }
