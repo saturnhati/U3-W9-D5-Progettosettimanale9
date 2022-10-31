@@ -76,25 +76,6 @@ user2.smartphone = galaxy;
 let user3 = new Utente("Luca", "Rota");
 let huawei = new Huawei("Huawei");
 user3.smartphone = huawei;
-// *prove in console
-// // mostro il saldo del telefono
-// user1.smartphone.numero404();
-// // ricarico e mostro nuovamente il saldo
-// user1.smartphone.ricarica(50);
-// user1.smartphone.numero404();
-// // eseguo una chiamata di 8 minuti e mostro nuovamente il saldo
-// user1.smartphone.chiamata(8);
-// user1.smartphone.numero404();
-// // eseguo altre due chiamate e mostro saldo e numero chiamate effettuate
-// user1.smartphone.chiamata(13);
-// user1.smartphone.chiamata(30);
-// user1.smartphone.numero404();
-// user1.smartphone.getNumeroChiamate();
-// // azzero il numero di chiamate
-// user1.smartphone.azzeraChiamate();
-// user1.smartphone.getNumeroChiamate();
-// console.log(user1.smartphone);
-// *fine prove in console
 let userArr = [user1, user2, user3];
 let bgArr = ["url('assets/img/iphone.png')", "url('assets/img/galaxy.png')", "url('assets/img/huawei.png')"];
 function displayContent() {
@@ -228,4 +209,3 @@ function startTimer(elem) {
     console.log(s);
     return s;
 }
-// TODO: sistemare funzionamento del timer delle chiamate che mo pare drogato
